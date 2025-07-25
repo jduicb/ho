@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>גלה את האישיות שלך</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="form-header">
+        <div class="logo"></div>
+        <h1>גלה את האישיות שלך</h1>
+        <p>הצטרף אלינו וגלה איזה טיפוס אתה באמת</p>
+      </div>
+
+      <div class="tabs">
+        <button id="login-tab" class="tab tab-active">התחברות</button>
+        <button id="register-tab" class="tab">הרשמה</button>
+      </div>
+
+      <!-- טופס התחברות -->
+      <form id="login-form" class="form" method="POST">
+        <div class="form-group">
+          <label for="login-email">אימייל</label>
+          <input id="login-email" name="email" type="email" required placeholder="הכנס את האימייל שלך">
+        </div>
+        <div class="form-group">
+          <label for="login-password">סיסמה</label>
+          <input id="login-password" name="password" type="password" required placeholder="הכנס את הסיסמה שלך">
+        </div>
+        <div class="form-options">
+          <div class="checkbox-container">
+            <input id="remember-me" name="remember-me" type="checkbox">
+            <label for="remember-me">זכור אותי</label>
+          </div>
+          <a href="#" class="forgot-password">שכחת סיסמה?</a>
+        </div>
+        <button type="submit" class="btn btn-primary">התחבר</button>
+      </form>
+
+      <!-- טופס הרשמה -->
+      <form id="register-form" class="form hidden" method="POST">
+        <div class="form-group">
+          <label for="register-name">שם מלא</label>
+          <input id="register-name" name="name" type="text" required placeholder="הכנס את שמך המלא">
+        </div>
+        <div class="form-group">
+          <label for="register-email">אימייל</label>
+          <input id="register-email" name="email" type="email" required placeholder="הכנס את האימייל שלך">
+        </div>
+        <div class="form-group">
+          <label for="register-password">סיסמה</label>
+          <input id="register-password" name="password" type="password" required placeholder="בחר סיסמה (לפחות 8 תווים)">
+        </div>
+        <div class="form-group">
+          <label for="register-password-confirm">אימות סיסמה</label>
+          <input id="register-password-confirm" name="password_confirmation" type="password" required placeholder="הכנס את הסיסמה שוב">
+        </div>
+        <div class="checkbox-container">
+          <input id="terms" name="terms" type="checkbox" required>
+          <label for="terms">אני מסכים/ה ל<a href="#">תנאי השימוש</a> ול<a href="#">מדיניות הפרטיות</a></label>
+        </div>
+        <button type="submit" class="btn btn-primary">הירשם</button>
+      </form>
+
+      <div class="divider"><span>או המשך עם</span></div>
+
+      <div class="social-buttons">
+        <button class="btn-social google">Google</button>
+        <button class="btn-social facebook">Facebook</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="register.js" defer></script>
+</body>
+</html>

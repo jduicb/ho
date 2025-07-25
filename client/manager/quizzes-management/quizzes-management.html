@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ניהול שאלונים - לוח ניהול</title>
+  <link rel="stylesheet" href="quizzes-management.css" />
+</head>
+<body>
+<header>
+  <div class="logo-container" tabindex="0" role="banner">
+    <div class="logo" aria-label="לוגו האתר"></div>
+    <div class="site-title">גלה את האישיות שלך - לוח ניהול</div>
+  </div>
+
+  <nav role="navigation" aria-label="תפריט מנהל ראשי">
+    <ul>
+      <li><a href="../../home/home.html" class="nav-link">דף הבית</a></li>
+      <li><a href="quizzes-management.html" class="nav-link active">ניהול שאלונים</a></li>
+      <li><a href="../admin-responses/admin-responses.html" class="nav-link">ניהול תוצאות</a></li>
+      <li><a href="users-management.html" class="nav-link">ניהול משתמשים</a></li>
+      <li><a href="settings.html" class="nav-link">הגדרות</a></li>
+      <li><a href="../../home/home.html" class="nav-link">יציאה</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="section-title">
+    <h2>ניהול שאלונים</h2>
+    <p>כאן ניתן ליצור, לערוך ולמחוק שאלונים</p>
+  </section>
+
+  <section class="content">
+    <button class="btn btn-primary" id="add-quiz-btn">הוסף שאלון חדש</button>
+
+    <table class="data-table" aria-label="טבלת שאלונים">
+      <thead>
+        <tr>
+          <th>שם שאלון</th>
+          <th>תיאור</th>
+          <th>פעולות</th>
+        </tr>
+      </thead>
+      <tbody id="quizzes-list">
+        <!-- תוכן דינמי של שאלונים -->
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <p>© 2025 גלה את האישיות שלך. כל הזכויות שמורות.</p>
+  </div>
+</footer>
+
+<script src="quizzes-management.js" defer></script>
+</body>
+</html>

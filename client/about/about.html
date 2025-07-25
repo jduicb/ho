@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>אודות - גלה את האישיות שלך</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="logo"></div>
+      <div class="site-title">גלה את האישיות שלך</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../home/home.html">דף הבית</a></li>
+        <li><a href="../quizzes/quizzes.html">שאלונים</a></li>
+        <li><a href="../results/results.html">תוצאות</a></li>
+        <li><a href="about.html" class="active">אודות</a></li>
+        <li><a href="../contact/contact.html">צור קשר</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button class="btn btn-outline" id="admin-login-btn">כניסת מנהל</button>
+      <button class="btn btn-primary" id="login-register-btn">התחברות / הרשמה</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h1>מי אנחנו?</h1>
+      <p>
+        אתר "גלה את האישיות שלך" נוצר במטרה לסייע לכל אחד ואחת להכיר את עצמם טוב יותר, 
+        להבין את תכונות האופי, החוזקות והכישורים, ולהתאים את הדרך האישית והמקצועית בצורה מדויקת יותר.
+      </p>
+
+      <div class="team">
+        <h2>צוות הפיתוח שלנו</h2>
+        <div class="team-members">
+          <div class="member-card">
+            <div class="member-photo" style="background-image: url('../images/member1.jpg');"></div>
+            <h3>רוני כהן</h3>
+            <p>מפתחת ראשית, UX/UI</p>
+          </div>
+          <div class="member-card">
+            <div class="member-photo" style="background-image: url('../images/member2.jpg');"></div>
+            <h3>אילן לוי</h3>
+            <p>מהנדס תוכנה, Backend</p>
+          </div>
+          <div class="member-card">
+            <div class="member-photo" style="background-image: url('../images/member3.jpg');"></div>
+            <h3>דנה בן עמי</h3>
+            <p>אנליסטית נתונים, מתכננת שאלונים</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mission">
+        <h2>המשימה שלנו</h2>
+        <p>
+          ליצור פלטפורמה נגישה, מקצועית ומהנה, שבה כל משתמש יוכל לקבל תובנות משמעותיות על עצמו, 
+          במטרה לשפר את ההבנה העצמית ואת איכות החיים.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 גלה את האישיות שלך. כל הזכויות שמורות.</p>
+  </footer>
+
+  <script src="about.js" defer></script>
+</body>
+</html>

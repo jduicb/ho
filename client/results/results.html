@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>תוצאות</title>
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container" tabindex="0" role="banner">
+            <div class="logo" aria-label="לוגו האתר"></div>
+            <div class="site-title">גלה את האישיות שלך</div>
+        </div>
+    
+        <nav role="navigation" aria-label="תפריט ראשי">
+            <ul>
+                <li><a href="home/home.html" class="nav-link active">דף הבית</a></li>
+                <li><a href="../quizzes/quizzes.html" class="nav-link">שאלונים</a></li>
+                <li><a href="../results/results.html" class="nav-link">תוצאות</a></li>
+                <li><a href="../about/about.html" class="nav-link">אודות</a></li>
+                <li><a href="../contact/contact.html" class="nav-link">צור קשר</a></li>
+            </ul>
+        </nav>
+    
+        <div class="auth-buttons">
+            <button class="btn btn-outline" id="admin-login-btn">כניסת מנהל</button>
+            <button class="btn btn-primary" id="login-register-btn">התחברות / הרשמה</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-title">
+            <h2>התוצאות שלך</h2>
+            <p>כאן תוכל לראות את סיכום התשובות שלך</p>
+        </div>
+
+        <section id="results-container" class="results-container">
+            <!-- כאן תוצג התוצאה -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>קישורים מהירים</h3>
+                <ul>
+                    <li><a href="home/home.html">דף הבית</a></li>
+                    <li><a href="quizzes/quizzes.html">שאלונים</a></li>
+                    <li><a href="results/results.html">תוצאות</a></li>
+                    <li><a href="about/about.html">אודות</a></li>
+                    <li><a href="contact/contact.html">צור קשר</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>שאלונים פופולריים</h3>
+                <ul>
+                    <li><a href="quizzes/tipus.html">טיפוסי אישיות</a></li>
+                    <li><a href="quizzes/strengths.html">חוזקות וכישורים</a></li>
+                    <li><a href="quizzes/career.html">התאמה קריירה</a></li>
+                    <li><a href="quizzes/learning-style.html">סגנון למידה</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>צור קשר</h3>
+                <ul>
+                    <li><a href="mailto:info@personality.co.il">info@personality.co.il</a></li>
+                    <li><a href="tel:+972-3-1234567">03-1234567</a></li>
+                    <li><a href="admin/admin.html">כניסת מנהל</a></li>
+                    <li><a href="register/register.html">כניסת לקוחות</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 גלה את האישיות שלך. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script src="results.js"></script>
+</body>
+</html>
